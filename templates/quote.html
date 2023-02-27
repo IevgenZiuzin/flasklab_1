@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Quote{% endblock %}
+{% block content %}
+    <div class="text-center">
+        <p>Quote {{ context.quote.id }}</p>
+        <blockquote class="blockquote">{{ context.quote.text }}</blockquote>
+    </div>
+{% endblock %}
